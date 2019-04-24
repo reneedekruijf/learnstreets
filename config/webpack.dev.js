@@ -70,9 +70,6 @@ module.exports = {
     },
     devtool: "inline-source-map",
     plugins: [
-        new CleanWebpackPlugin(['dist'], {
-            root: path.join(__dirname, '..')
-        }),
         new MiniCssExtractPlugin({
             filename: "css/[name].css",
         }),
